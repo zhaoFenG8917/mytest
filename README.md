@@ -50,7 +50,7 @@
 
 ​	Docker 是一个开源项目，诞生于 2013 年初，最初是 dotCloud 公司内部的一个业余项目。它基于 Google 公司推出的 Go 语言实现。 项目后来加入了 Linux 基金会，遵从了 Apache 2.0 协议，项目代码在 [GitHub](https://github.com/docker/docker) 上进行维护。
 
-​	![](image/1-3.png)
+​	![](https://github.com/zhaoFenG8917/mytest/blob/main/image/1-3.png)
 
 
 
@@ -84,7 +84,7 @@
 
 ​	下面的图片比较了 Docker 和传统虚拟化方式的不同之处，可见容器是在操作系统层面上实现虚拟化，直接复用本地主机的操作系统，而传统方式则是在硬件层面实现。
 
-![](image/1-1.png)
+![](https://github.com/zhaoFenG8917/mytest/blob/main/image/1-1.png)
 
 与传统的虚拟机相比，Docker优势体现为启动速度快、占用体积小。
 
@@ -94,7 +94,7 @@
 
 ​	Docker是一个客户端-服务器（C/S）架构程序。Docker客户端只需要向Docker服务器或者守护进程发出请求，服务器或者守护进程将完成所有工作并返回结果。Docker提供了一个命令行工具Docker以及一整套RESTful API。你可以在同一台宿主机上运行Docker守护进程和客户端，也可以从本地的Docker客户端连接到运行在另一台宿主机上的远程Docker守护进程。
 
-![](image/1-2.png)
+![](https://github.com/zhaoFenG8917/mytest/blob/main/image/1-2.png)
 
 ### 1.4.2 Docker镜像与容器
 
@@ -448,7 +448,7 @@ docker rm 容器名称（容器ID）
 
 
  [https://www.docker.com/products/docker-hub](https://www.docker.com/products/docker-hub)
- ![](image/20220213185612.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213185612.png)
 
 
 ``` 
@@ -480,25 +480,25 @@ User: weblogic
 Pass: welcome1
 ```
 
- ![](image/20220213185820.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213185820.png)
 
- ![](image/weblogic1.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/weblogic1.png)
 
 ## 4.2 jenkins 部署
 
 ###Jenkins简介
 
-  ![](image/20220213190953.png)
+  ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213190953.png)
 
 ###Jenkins官网
  
   [https://www.jenkins.io/](https://www.jenkins.io/)
 
-  ![](image/20220213191136.png)
+  ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213191136.png)
   
   [GitHub](https://github.com/jenkinsci/jenkins)
 
-  ![](image/20220213191352.png)
+  ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213191352.png)
 
 ###Jenkins的Docker容器化安装
 
@@ -509,9 +509,9 @@ docker pull jenkins
 ```
 
 
-  ![](image/20220213191545.png)
+  ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213191545.png)
 
-  ![](image/20220213191759.png)
+  ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213191759.png)
 
 ###我们只需要知道怎么去使用他就可以了。
    
@@ -519,19 +519,19 @@ docker pull jenkins
 docker run -p 8080:8080 -p 50000:50000 jenkins
 ```
 
-  ![](image/20220213191919.png)
+  ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213191919.png)
 
 jenkins 启动的时候会在控制台输出一段密码稍后使用
 
-  ![](image/20220213192415.png)
+  ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213192415.png)
 
 首次登录的时候会需要输入密码，复制刚才控制台输出的密码即可
 
-  ![](image/20220213192538.png)
+  ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213192538.png)
 
 Jenkins 解锁完成 接下来就可以配置插件了，至此，Jenkins安装完成，后续我会继续介绍Jenkins的功能，在此不再赘述。
 
-  ![](image/20220213192939.png)
+  ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213192939.png)
 
 ## 4.1 通过centos:7镜像制作weblogic10容器基于jdk1.6环境
 
@@ -539,7 +539,7 @@ Jenkins 解锁完成 接下来就可以配置插件了，至此，Jenkins安装�
 
 <font color='red' size='4' ><strong>注意:不要直接使用docker pull centos这样会下载lastest版本</strong></font>
 
-  ![](image/20220213193855.png)
+  ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213193855.png)
 
 我们下载centos:7这个版本
 
@@ -547,7 +547,7 @@ Jenkins 解锁完成 接下来就可以配置插件了，至此，Jenkins安装�
 docker pull centos:7
 ```
 
-  ![](image/20220213195009.png)
+  ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213195009.png)
 
 
 ### 编写 Dockerfile
@@ -586,7 +586,7 @@ docker pull centos:7
 docker build -t="weblogic1036" .
 ```
 
- ![](image/20220213203507.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213203507.png)
 
 构建完成，没有报错
 
@@ -596,7 +596,7 @@ docker build -t="weblogic1036" .
 docker images
 ```
 
- ![](image/20220213204858.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213204858.png)
 
 
 启动镜像成为容器
@@ -605,7 +605,7 @@ docker images
 docker run -d -i -t -v /app:/app -p 7001:7001 --name weblogic1036 --privileged=true  weblogic1036:latest /bin/bash
 ```
 
- ![](image/20220213205035.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213205035.png)
 
 -v 为文件挂载 前一个为宿主机，后一个为容器 挂载的目的就是要安装软件部署项目
 
@@ -621,7 +621,7 @@ docker run -d -i -t -v /app:/app -p 7001:7001 --name weblogic1036 --privileged=t
 docker exec -it weblogic1036 /bin/bash
 ```
 
- ![](image/20220213205334.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213205334.png)
 
 容器中的java环境就安装好了
 
@@ -629,10 +629,10 @@ docker exec -it weblogic1036 /bin/bash
 
  [https://www.runoob.com/docker/docker-dockerfile.html](https://www.runoob.com/docker/docker-dockerfile.html)
 
- ![](image/20220213205614.png)
- ![](image/20220213205710.png)
- ![](image/20220213205947.png)
- ![](image/20220213210043.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213205614.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213205710.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213205947.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213210043.png)
 
  这里我只摘取一部分
 
@@ -643,116 +643,116 @@ docker exec -it weblogic1036 /bin/bash
 ```
 java -jar wls1036_generic.jar
 ```
- ![](image/20220213210925.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213210925.png)
  Next
- ![](image/20220213211133.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213211133.png)
  我们这里放入到/oracle/middleware 下面, 注意这里操作的是容器，不要与挂载的容器目录相同以免后续软件运行不正常。
- ![](image/20220213211522.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213211522.png)
  选择1 next
- ![](image/20220213211644.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213211644.png)
  选择3 next
 
  Weblogic 的 Register for Security Updates 默认为Yes 如果填Yes就需要填邮箱和密码之类的，很烦，直接NO。
- ![](image/20220213212714.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213212714.png)
  在这里我们进行典型安装 
  
  1 回车
- ![](image/20220213213023.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213213023.png)
  我们使用安装好的jdk1.6
  next 回车
- ![](image/20220213213522.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213213522.png)
  next
- ![](image/20220213213727.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213213727.png)
  next
- ![](image/20220213213910.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213213910.png)
  next
 
  安装完成
- ![](image/20220213214025.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213214025.png)
  
  容器中的weblogic10就安装好了
- ![](image/20220213214137.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213214137.png)
 
 ####创建domain域
 
  进入common/bin 目录下
- ![](image/20220213214515.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213214515.png)
  执行
 
 ``` 
  ./config.sh
 ```
 
- ![](image/20220213214618.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213214618.png)
  
  1 回车
- ![](image/20220213215011.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213215011.png)
  next
- ![](image/20220213215047.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213215047.png)
 
  在这里名字要重新起一个
  base_domain_7001
- ![](image/20220213215140.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213215140.png)
  1为选择 2为放弃
 
  我们这里选择1
- ![](image/20220213215309.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213215309.png)
  
  domain域的路径就使用这个路径
 
  next
- ![](image/20220213215422.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213215422.png)
  
  这里我们需要设置weblogic登录的密码
  
  用户名:weblogic
  密码：weblogic123
  确认密码：weblogic123
- ![](image/20220213215653.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213215653.png)
 
- ![](image/0220213215824.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/0220213215824.png)
 
- ![](image/20220213215917.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213215917.png)
  
  description 就不写了
 
  直接Next
  这里默认是开发环境
  Next
- ![](image/20220213220026.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213220026.png)
 
  这里为默认安装好的jdk
 
  next
- ![](image/20220213220238.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213220238.png)
 
  在这里选择第一个
 
  next
- ![](image/20220213220431.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213220431.png)
 
  查看一下确保无误
 
  next
- ![](image/20220213220601.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213220601.png)
 
  这样domain域就创建好了
- ![](image/20220213220654.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213220654.png)
 
 #### 启动weblogic
 
  直接看图吧
- ![](image/20220213220847.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213220847.png)
  
 
 
  启动成功
- ![](image/20220213221012.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213221012.png)
 
  部署燕赵核心系统开发环境
 
  配置好数据源部署好项目之后启动开发环境发现报错
- ![](image/20220213222326.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213222326.png)
 
  原因在于当前的容器还不支持中文环境
  
@@ -764,21 +764,21 @@ docker ps
 docker exec -it 42f4018ae023 /bin/bash
 ```
 
- ![](image/20220213222725.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213222725.png)
 
 
 ```
 locale
 ```
 
- ![](image/20220213223002.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213223002.png)
 
  
 ```
 locale -a
 ```
 
- ![](image/20220213223106.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213223106.png)
 
 
 安装中文环境
@@ -788,13 +788,13 @@ locale -a
 yum -y install kde-l10n-Chinese && yum -y reinstall glibc-common
 ```
  
- ![](image/20220213223334.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213223334.png)
 
 ```
 locale -a
 ```
  
- ![](image/20220213223518.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213223518.png)
 
 en_US.utf8 
 
@@ -820,7 +820,7 @@ docker容器执行：
 localedef -c -f UTF-8 -i en_US en_US.UTF-8
 ```
 
- ![](image/20220213224223.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213224223.png)
 
 
 还需要修改weblogic其中的一个脚本
@@ -836,7 +836,7 @@ localedef -c -f UTF-8 -i en_US en_US.UTF-8
 
    发现还是没有解决，目前没有很好的办法，那只能把“开发用”改成“dev”试试了
 
-  ![](image/20220213230345.png)
+  ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213230345.png)
 
   到宿主机的WEB-INF目录下
   
@@ -861,7 +861,7 @@ vim web.xml
 内存溢出
 需要设置堆栈
 
- ![](image/20220213230843.png) 
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213230843.png) 
 
 
 直接通过脚本进行后台启动
@@ -890,17 +890,17 @@ nohupstart.sh
 
 把编写好的脚本上传至宿主机/app/application
 
-  ![](image/20220213231753.png)
+  ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213231753.png)
 
 
 在容器内启动/app/application/nohupstart.sh
 
-  ![](image/20220213232224.png)
+  ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213232224.png)
 
 启动完成，访问一下目标
 
 核心环境能够正常打开
-  ![](image/20220213232425.png)
+  ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213232425.png)
 
 
 将容器commit 称为一个镜像
@@ -915,7 +915,7 @@ docker commit weblogic1036 weblogic1036:latest
 docker images
 ```
 
- ![](image/20220213233030.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213233030.png)
 
 我们把容器down一下
 
@@ -939,7 +939,7 @@ docker exec -it weblogic1036 /bin/bash
 Jps
 ```
 
- ![](image/20220213233722.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213233722.png)
 
 我们通过刚才commit的镜像重新启动一个容器并把脚本挂载上去
 
@@ -967,10 +967,10 @@ docker run -d -it -v /app:/app -p 7001:7001 --name weblogic1036new  --privileged
 ```
 tail -100f base_domain7001.out 
 ```
- ![](image/20220213235259.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213235259.png)
 
 核心环境正常打开
- ![](image/20220213232425.png)
+ ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213232425.png)
 
 然后我们就可以通过
 
@@ -979,11 +979,11 @@ tail -100f base_domain7001.out
 
 这两条命令关闭和启动服务，并且启动服务的时候自动执行脚本
 
- ![avatar](image/20220213235655.png)
+ ![avatar](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213235655.png)
 
- ![avatar](image/20220213235743.png)
+ ![avatar](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213235743.png)
 
- ![avatar](image/20220213235821.png)
+ ![avatar](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213235821.png)
 
 
 # END
