@@ -27,7 +27,7 @@
 
 - 从jdk1.6镜像制作weblogic10.6.3镜像和容器
 
-- 部署燕赵财险核心系统开发环境。
+- 部署应用程序开发环境。
 
 - 修改容器启动时执行脚本。
 
@@ -749,7 +749,7 @@ java -jar wls1036_generic.jar
  启动成功
  ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213221012.png)
 
- 部署燕赵核心系统开发环境
+ 部署应用程序开发环境
 
  配置好数据源部署好项目之后启动开发环境发现报错
  ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213222326.png)
@@ -898,8 +898,7 @@ nohupstart.sh
   ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213232224.png)
 
 启动完成，访问一下目标
-
-核心环境能够正常打开
+应用程序能够正常打开
   ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213232425.png)
 
 
@@ -969,7 +968,7 @@ tail -100f base_domain7001.out
 ```
  ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213235259.png)
 
-核心环境正常打开
+应用程序正常打开
  ![](https://github.com/zhaoFenG8917/mytest/blob/main/image/20220213232425.png)
 
 然后我们就可以通过
